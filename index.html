@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/97632b9a68.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+
+            <nav>
+
+                <img src="logo.png" class="logo">
+
+                <ul id="sidemenu">
+
+                    <li>
+                        <a href="#header">Home</a>
+
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+
+                    </li>
+                    <li>
+                        <a href="#service">Services</a>
+
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+
+                    </li>
+                    <i class="fa-regular fa-circle-chevron-down" id="header22" onclick="closemenu()"></i>
+
+                </ul>
+
+                <i class="fa-regular fa-circle-chevron-down" id="header23" onclick="openmenu()" style="float: right;"></i>
+
+            </nav>
+
+            <div class="header-text">
+
+
+                <h1 style="float: right;">
+                    Hi, I'm <span>Sarthak.</span> <br>CS student and <br> an aspiring Computer <br> Scientist from NEPAL.
+                </h1>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-----about-------------->
+
+    <div id="about">
+
+        <div class="container">
+
+            <div class="row">
+
+
+                <div class="about-col-1">
+
+                    <img src="user.png">
+
+
+                </div>
+                <div class="about-col-2">
+
+                    <h1 class="sub-title"> About me </h1>
+
+                    <br>
+                    <br>
+
+                    <p>
+                        I am a passionate computer Science student with a zeal to explore more in tech domain. I have a good problem solving skills and have worked both as research and industry intern as of now.
+                        <br> Text me if you want to talk about tech, learning, exploring , internship and opportunities.
+                    </p>
+                    <div class="tab-titles">
+
+                        <p class="tab-links active-link" id="skillss" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" id="experiences" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" id="educations" onclick="opentab('education')">Education</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>
+                                    Web Development
+                                </span>
+                                <br> Building full stack web applications
+
+                            </li>
+                            <li>
+                                <span>
+                                    Machine Learning
+                                </span>
+                                <br> Building ML and DL models
+
+                            </li>
+                            <li>
+                                <span>
+                                    BlockChain Development
+                                </span>
+                                <br> Building Smart Contracts and dapps.
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>
+                                   Research Intern(May 2022-July 2022)
+                                </span>
+                                <br> Indian Institute of Technology, Kharagpur, India
+
+                            </li>
+                            <li>
+                                <span>
+                                    Web developer Intern (July 2022-Aug 2022)
+                                </span>
+                                <br> Smart Roads, Nepal.
+
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>
+                                    VELLORE INSTITUTE OF TECHNOLOGY
+                                </span>
+                                <br> 2020-2024
+
+                            </li>
+                            <li>
+                                <span>
+                                    St. Xavier's College Maitighar
+
+                                    
+                                </span>
+                                <br> 2018-2020
+
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="service">
+
+        <div class="container">
+
+            <h1 class="sub-title">My Services</h1>
+
+            <div class="service-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h3>
+                        Web development
+                    </h3>
+                    <br>
+
+                    <p>
+                        I have worked on various projects related to web development ranging from community web app to a react chat app. Feel free to contact me if you feel I am eligible to deliver the service.
+                        <a href="#">Learn more</a>
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-hive"></i>
+                    <h3>
+                        D-apps
+                    </h3>
+                    <br>
+                    <p>
+                        I am exploring Decentralized applications development. Currently I am working on KICKSTARTER clone for go fund me for coffee project
+
+                        <a href="#">Learn more</a>
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+
+
+                    <h3>
+                        Machine learning
+                    </h3>
+                    <br>
+                    <p>
+                        Feel free to contact me for creating ML DL models and for implementing Data Science Pipelines.
+
+                        <a href="#">Learn more</a>
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!----------------portfolio------------->
+
+
+    <div id="portfolio">
+
+
+        <div class="container">
+
+            <h1 class="sub-title">
+
+                My Work
+
+            </h1>
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.png">
+                    <div class="layer">
+
+                        <h3> <strong>MEDICAL CHATBOT</strong></h3>
+
+                        <p>
+                            Medical chatbot built with cosine distance similarity and neural networks
+
+
+                        </p>
+
+                        <a href="">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="work2.jpg">
+                    <div class="layer">
+
+                        <h3> <strong>VIT ONE</strong> </h3>
+
+                        <p>
+                            Community Website for VIT students.
+
+
+                        </p>
+
+                        <a href="">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.png">
+                    <div class="layer">
+
+                        <h3><strong>MOVIE RECOMMENDATION SYSTEM</strong> </h3>
+
+                        <p>
+                            Movie Recommendation Engine
+
+
+                        </p>
+
+                        <a href="">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See more</a>
+        </div>
+
+
+
+        <!--- Contact section of the webpage--->
+
+        <div id="contact">
+            <div class="container">
+
+                <div class="row">
+
+
+                    <div class="contactformleft">
+
+                        <h1 class="sub-title">
+
+                            Contact Me
+                        </h1>
+
+                        <p><i class="fa-solid fa-envelope" style="color: #ff004f;"></i> &nbsp; girisarthak455@gmail.com</p>
+                        <p><i class="fa-solid fa-phone" style="color: #ff004f;"></i> &nbsp;+91-6385491038</p>
+
+                        <div class="socialicons">
+
+                            <a href="https://www.facebook.com/sarthak.giri.52/">
+                                <i class="fa-brands fa-facebook"></i>
+
+                            </a>
+                            <a href="https://www.linkedin.com/in/sarthak-giri-b2a923220/">
+                                <i class="fa-brands fa-linkedin"></i>
+
+                            </a>
+                            <a href="https://mail.google.com/mail/u/0/#inbox">
+                                <i class="fa-solid fa-envelope"></i>
+
+                            </a>
+                            <a href="https://github.com/Sarthakgiri455">
+                                <i class="fa-brands fa-github"></i>
+
+                            </a>
+                            <a href="resume.pdf" download="" class="btn" id="cvboy" style="position: absolute; margin-left:0px">Download CV</a>
+
+
+                        </div>
+
+
+                    </div>
+                    <br>
+                    <div class="contactformright">
+
+                        <form>
+
+                            <input type="text" name="name" placeholder="Your NAME" required>
+                            <input type="email" name="email" placeholder="Your EMAIL" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+
+
+                            <a href="#" class="btn">Submit</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @ SARTHAK. </p>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tablinkname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tablinkname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu()
+
+        {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu()
+
+        {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>
